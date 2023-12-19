@@ -39,8 +39,7 @@ app = Flask(__name__)
 
 @app.route('/login')
 def login():
-    # redirec to https://api.fyers.in/api/v2/generate-authcode?client_id=HYMR3Q21NV-100&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Ffyers%2Fapi%2Fsuccess&response_type=code&state=success
-    redirect_fyer_api_login_url = "https://api.fyers.in/api/v2/generate-authcode?client_id=HYMR3Q21NV-100&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Ffyers%2Fapi%2Fsuccess&response_type=code&state=success"
+    
     return redirect(redirect_fyer_api_login_url)
 
 @app.route('/hello/<name>')
